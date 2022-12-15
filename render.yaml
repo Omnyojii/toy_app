@@ -11,11 +11,11 @@ services:
     buildCommand: "./bin/render-build.sh"
     startCommand: bundle exec rails s
     envVars:
-      - key: RAILS_MASTER_KEY
+      - key: 56e7b3127953bd0603c0e851bbc7688d
         sync: false
-      - key: DATABASE_URL
+      - key: postgres://toy_app_k0ti_user:VjopLdvJ1WTuWvTbV1SdsP3b2VMPJpFr@dpg-cedckasgqg45ht9a00s0-a/toy_app_k0ti
         fromDatabase:
-          name: postgres
+          name: toy_app
           property: connectionString
   - type: redis
     name: redis

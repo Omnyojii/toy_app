@@ -6,17 +6,11 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <% # <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>     %>
-    <% # <%= javascript_importmap_tags %>     %>
-
-    <%= stylesheet_link_tag "application", media: "all", 'data-turbolinks-track': "reload" %>
-    <%= javascript_pack_tag "application", 'data-turbolinks-track': "reload" %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
   </head>
 
   <body>
-    <header class="container mt-4 mb-4">    
-      <a href="https://render.com"><%= image_tag "render.png", class: "mw-100" %></a>  
-    </header>  
     <%= yield %>
   </body>
 </html>
